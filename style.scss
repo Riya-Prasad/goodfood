@@ -126,6 +126,8 @@ section {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
 }
 
 .flex {
@@ -271,7 +273,9 @@ section {
         width: 223px;
         height: 292px;
         position: relative;
+        overflow: hidden;
         img {
+          overflow: hidden;
           position: absolute;
         }
       }
@@ -310,14 +314,14 @@ section {
             font-size: var(--fs-heading);
             line-height: var(--line-height);
             color: var(--dark-heading-color);
-            width: 40vw;
+            width: 20ch;
           }
           .menu-body {
             font-size: var(--fs-body);
             color: var(--secondary-color);
             line-height: var(--sm-line-height);
             margin: 22px 0;
-            width: 40vw;
+            width: 40ch;
           }
         }
       }
@@ -371,7 +375,7 @@ section {
       font-size: var(--fs-heading);
       line-height: var(--line-height);
       color: var(--body-color);
-      width: 375px;
+      width: 26ch;
       margin: 0 auto;
     }
     .wine-body {
@@ -565,7 +569,9 @@ section {
     }
 
     .footer-rights {
+      display: flex;
       flex-direction: row;
+      align-items: center;
       justify-content: space-between;
       margin-top: 4em;
       font-size: 14px;
@@ -637,7 +643,7 @@ section {
           text-align: center;
           padding: 0 !important;
           .voucher-body {
-            width: 50vw !important;
+            width: 60vw !important;
           }
         }
 
@@ -652,6 +658,7 @@ section {
 @media (max-width: 598px) {
   .hero {
     grid-template-columns: 1fr;
+
     .hero-img {
       height: 50vh;
     }
@@ -659,6 +666,7 @@ section {
 
   .wine {
     grid-template-columns: 1fr;
+
     .wine-img {
       height: 50vh;
     }
@@ -668,6 +676,7 @@ section {
     .container {
       .grid {
         grid-template-columns: 1fr;
+
         .left-side {
           display: flex;
           flex-direction: column;
@@ -693,8 +702,9 @@ section {
       .footer-rights {
         flex-direction: column;
         align-items: center;
-        margin-top: 2;
+        margin-top: 2em;
         gap: 1em;
+        text-align: center;
       }
     }
   }

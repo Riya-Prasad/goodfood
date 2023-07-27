@@ -116,6 +116,8 @@ section {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
 }
 
 .flex {
@@ -245,8 +247,10 @@ section {
   width: 223px;
   height: 292px;
   position: relative;
+  overflow: hidden;
 }
 .hero .hero-right-side .point-sec .hero-img2 img {
+  overflow: hidden;
   position: absolute;
 }
 
@@ -277,14 +281,14 @@ section {
   font-size: var(--fs-heading);
   line-height: var(--line-height);
   color: var(--dark-heading-color);
-  width: 40vw;
+  width: 20ch;
 }
 .menu .container .grid .first-sec .left-side .menu-body {
   font-size: var(--fs-body);
   color: var(--secondary-color);
   line-height: var(--sm-line-height);
   margin: 22px 0;
-  width: 40vw;
+  width: 40ch;
 }
 .menu .container .lower-sec {
   align-items: center;
@@ -331,7 +335,7 @@ section {
   font-size: var(--fs-heading);
   line-height: var(--line-height);
   color: var(--body-color);
-  width: 375px;
+  width: 26ch;
   margin: 0 auto;
 }
 .wine .right-side .wine-body {
@@ -502,7 +506,9 @@ section {
   opacity: 0.7;
 }
 .footer .container .footer-rights {
+  display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   margin-top: 4em;
   font-size: 14px;
@@ -554,7 +560,7 @@ section {
     padding: 0 !important;
   }
   .voucher .container .grid .left-side .voucher-body {
-    width: 50vw !important;
+    width: 60vw !important;
   }
   .voucher .container .grid .right-side-img {
     height: 50vh;
@@ -594,8 +600,9 @@ section {
   .footer .container .footer-rights {
     flex-direction: column;
     align-items: center;
-    margin-top: 2;
+    margin-top: 2em;
     gap: 1em;
+    text-align: center;
   }
 }
 @media (max-width: 498px) {
